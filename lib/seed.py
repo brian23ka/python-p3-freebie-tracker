@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from models import Base, Company, Dev, Freebie
 
 # Configure your database URL here
-DATABASE_URL = "sqlite:///freebie_tracker.db"
+DATABASE_URL = "sqlite:///freebies.db"
 
 engine = create_engine(DATABASE_URL, echo=True)
 Session = sessionmaker(bind=engine)
